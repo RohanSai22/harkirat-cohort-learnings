@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>My Site</title>
+    </head>
+    <body>
+        <h3>HTML</h3>
+        <ul>
+            <li>
+        Got to know like within using video tag i need to specify it as muted while having autoplay like this 
+        <!--<video width="300" height="300" autoplay mmuted src="./some.mp4"></video>-->
+            </li>
+            <li>
+                <input type="email" placeholder="email"/>
+                <input type ="password" placeholder="password"/>
+                <button>Submit</button>
+            </li>
+            <li>
+                <a href="https://www.gmail.com/" target="_blank">Sign up with google</a>
+            </li>
+        </ul>
+        <h3>CSS</h3>
+        <ul>
+        <li>
+            Every color is represented in 3 bytes which is #(0-255) (0-255) (0-255)
+        </li>
+        <li>
+            Border creeps into div while box shadow comes out of div and glows kinda 
+        </li>
+        <li>
+            100vh in width means complete height of the page is to be taken 
+        </li>
+        <li>
+            Marging is outside div how much space do we want and Padding is how we position or space we need inside a div
+        </li>
+        </ul>
+        <h3>How to make websites prettier</h3>
+        <ul>
+            <li>
+                First thing is to using fonts {Actually it is a .woff file which is made by actual people who make fonts}
+                It can be used using font face in css liek this 
+                <!--
+                @font-face{
+                name : fancy-font
+                url :  fonts.google.com/fancy-font.woff 
+                }
+                #somediv{
+                font-family : fancy-font
+                }
+                -->
+            </li>
+            <li>
+                Generally it is a good idea to use the google fonts since it might have been cached and when users try to load your page it will be faster
+            </li>
+            <li>
+                Contents of the Page
+            </li>
+            <li>
+                Motions of the page/ Animations {3js , Aceternity, Framer Motion} -> refer - motion.dev
+            </li>
+            <li>
+                Colors and Color palette -> {Best use this uicolors.app/generate}
+            </li>
+            <li>
+                Gradients like linear gradient or radial gradient 
+                <li>
+                    Linear Gradient : linear-gradient(red,green)
+                    It goes from top to bottom or left to right
+                </li>
+                <li>
+                    Radial gradient : radial-gradient(circle,red ,green, blue)
+                    It goes from center to the corners in cirlces but defailt is ellipse
+                </li>
+            </li>
+            <li>
+                Hover effects (using animations and all) , an example is box-shadow
+                <!--Example is :
+                transition : box-shadow 0.3s ease; #meaning it should go in an easing slow way
+                -->
+            </li>
+        </ul>
+        <h3>FlexBox</h3>
+        <ul>
+            <li>
+                There are concepts of these 
+                <ol>
+                    <li>
+                        display:flex,
+                    </li>
+                    <li>
+                        flex-direction:row(default)/column,
+                    </li>
+                    <li>
+                        justify-content: space-between/flex-start/flex-end,space-evenly(idk) ,
+                    </li>
+                    <li>
+                        align-items: center (to align the other side when using justify content)
+                    </li>
+                    <li>
+                        There is also this thing wherein we go for display flex of the parent div and then within child we use flex:1/2/3/4 so on.. within other child also we use flex:1/2/3/4 . Just saying both divs to take as much as space needed
+                    </li>
+                </ol>   
+
+            </li>
+        </ul>
+    </body>
+</html>

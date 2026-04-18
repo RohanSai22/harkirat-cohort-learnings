@@ -1,0 +1,166 @@
+<!--Myversion
+<html>
+    <head>
+        <title>Elevel Labs Assignment</title>
+    </head>
+    <body>
+        <div style="display: flex; flex-direction: column; min-height: 100vh;justify-content: space-between">
+            <div style="display:flex; justify-content: center;">
+                <h3>IIElevenLabs</h3>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; ">
+                <h2>Create an Account</h2>
+                <button onclick="window.location.href='https://www.gmail.com'">Sign up with google</button>
+                <hr>
+                <h5>Email</h5>
+                <input type="email" placeholder="Email"/>
+                <h5>Password</h5>
+                <input type="password" placeholder="Password"/>
+                <button>Signup</button>
+                <p>
+                    Already Registered?
+                    <a href="https://www.gmail.com">Sign in</a>
+                </p>
+            </div>
+            <div style="display:flex;justify-content: center;">
+                By continuing , you agree to our <a href="https://www.google.com/terms-and-conditions">Terms of Service</a> and <a href="https://www.google.com/privacy-policy">Privacy Policy</a> 
+            </div>
+        </div>
+    </body>
+</html>
+--->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IIElevenLabs Assignment</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .form-box {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      padding: 32px 32px 24px 32px;
+      min-width: 350px;
+      display: flex;
+      flex-direction: column;
+      
+      gap: 16px;
+    }
+    .form-box h2 {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .google-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px 0;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 16px;
+    }
+    .google-btn img {
+      width: 20px;
+      height: 20px;
+    }
+    input[type="email"], input[type="password"] {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    .signup-btn {
+      background: #bdbdbd;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 1px solid gray;
+      padding: 12px;
+      font-size: 16px;
+      margin-top: 8px;
+      cursor: not-allowed;
+    }
+    .signin-link {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    .signin-link a {
+      color: #222;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 16px;
+    }
+    .footer a {
+      color: #888;
+      text-decoration: underline;
+    }
+    h3 {
+      text-align: center;
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+  </style>
+</head>
+<body>
+  <h3>IIElevenLabs</h3>
+  <div class="container">
+    <div class="form-box">
+      <h2>Create an account</h2>
+      <button class="google-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google logo">
+        Sign up with Google
+      </button>
+      <hr>
+      <label>Email</label>
+      <input type="email" placeholder="Email"/>
+      <label>Password</label>
+      <input type="password" placeholder="Password"/>
+      <button class="signup-btn" disabled>Sign up</button>
+      <div class="signin-link">
+        Already registered? <a href="#">Sign in</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+  </div>
+</body>
+</html>
+
+<!--
+Learnings : 
+1. I didnt use label for actual label based text 
+2. So the thing is i could have given the middle container a flex:1 while giving main div just-content:center; align-items:center
+3. GPT 4.1 missed on adding box-shadow maybe by default it doesn't
+4. Actually it
+-->

@@ -1,0 +1,171 @@
+<!--My Implementation
+<html>
+    <head>
+        <title>Eleven Labs : Sales Page </title>
+    </head>
+    <body style="margin:0; padding:0">
+        <div style ="min-height: 100vh; display: flex;">
+            <div style="flex:1;background-color: rgb(53, 50, 50); color: white">
+                <div style="display:flex;justify-content: space-between; flex-direction: column; margin: 20px;">
+                    <h4>IIElevenLabs</h4>
+                    <h1>Contact our sales team</h1>
+                    <div style="display: flex; justify-content: space-evenly; flex-direction: column;margin:10px;">
+                        <p>Custom pricing and elevated concurrency</p>
+                        <p>Enterprise-grade security including SOC II, GDPR and HIPAA compliance</p>
+                        <p>Enterprise support and SLAs</p>
+                        <p>Trusted by 10,000+ leading businesses</p>
+                    </div>
+                </div>
+            </div>
+            <div style="flex:1;background-color: white;">
+                 <div style="min-height:100vh; display: flex; justify-content: center; align-items: center;">
+                    <div>
+                        <h1>Contact Sales form</h1>
+                        <p>Please fill out the form to get started</p>
+                        <p>Company Website</p>
+                        <input type="url" aria-placeholder="https:www.cognitia.com">
+                        <p>Business Email</p>
+                        <input type="email" aria-placeholder="cognitia@gmail.com"/>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </body>
+</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eleven Labs : Sales Page</title>
+  <style>
+    body { margin:0; padding:0; font-family: Arial, sans-serif; }
+    .main { min-height: 100vh; display: flex; }
+    .left {
+      flex:1;
+      background: #232323;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 48px 40px 0 60px;
+    }
+    .left h4 { margin: 0 0 32px 0; font-size: 1.2em; }
+    .left h1 { font-size: 2.5em; margin-bottom: 32px; }
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 32px 0;
+    }
+    .features li {
+      display: flex;
+      align-items: center;
+      font-size: 1.1em;
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+    .features li .icon { margin-right: 12px; font-size: 1.3em; }
+    .trusted { color: #bbb; margin-bottom: 24px; }
+    .logos { display: flex; gap: 32px; margin-bottom: 24px; }
+    .logos span { font-size: 2em; font-weight: bold; }
+    .reviews { color: #bbb; margin-bottom: 24px; }
+    .screenshot { width: 100%; border-radius: 12px; box-shadow: 0 2px 16px rgba(0,0,0,0.2); }
+    .right {
+      flex:1;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .form-box {
+      width: 400px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      padding: 40px 32px 32px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 16px;
+    }
+    .form-box h1 { font-size: 2em; margin-bottom: 8px; }
+    .form-box p { color: #888; margin-bottom: 16px; }
+    .form-box label { font-weight: 500; margin-bottom: 4px; }
+    .form-box input {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 16px;
+      width: 100%;
+    }
+    .form-box button {
+      background: #444;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 16px;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+    .progress {
+      display: flex;
+      gap: 8px;
+      margin-top: 24px;
+      justify-content: center;
+    }
+    .progress span {
+      display: inline-block;
+      width: 40px;
+      height: 4px;
+      border-radius: 2px;
+      background: #eee;
+    }
+    .progress .active { background: #222; }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="left">
+      <h4>IIElevenLabs</h4>
+      <h1>Contact our sales team</h1>
+      <ul class="features">
+        <li><span class="icon">🚀</span>Custom pricing and elevated concurrency</li>
+        <li><span class="icon">🛡️</span>Enterprise-grade security including SOC II, GDPR and HIPAA compliance</li>
+        <li><span class="icon">📄</span>Enterprise support and SLAs</li>
+      </ul>
+      <div class="trusted">Trusted by 10,000+ leading businesses</div>
+      <div class="logos">
+        <span>Revolut</span>
+        <span>Klarna</span>
+        <span>Meta</span>
+        <span>Disney</span>
+      </div>
+      <div class="reviews">⭐ 4.5 stars and 1,059+ reviews</div>
+      <img class="screenshot" src="https://your-screenshot-url.png" alt="Product Screenshot">
+    </div>
+    <div class="right">
+      <div class="form-box">
+        <h1>Contact sales form</h1>
+        <p>Please fill out the form below to get started</p>
+        <label>Company Website</label>
+        <input type="url" placeholder="elevenlabs.io">
+        <label>Business Email</label>
+        <input type="email" placeholder="example@elevenlabs.io"/>
+        <button>Next</button>
+        <div class="progress">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!--
+Learnings :
+1. list-style: none; -> It can be used to make list style non effective
+
+-->
